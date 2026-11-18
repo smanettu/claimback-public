@@ -1,6 +1,6 @@
 # ClaimBack — Privacy Notice
 
-**Version:** 1.0  
+**Version:** 1.1  
 **Effective date:** November 18, 2026
 
 ClaimBack helps you organise receipts, track product warranties and prepare
@@ -34,6 +34,14 @@ Selected files and shared documents can also be imported. Permission can be
 changed in your device settings. The app does not need access to your contacts
 or precise location. The current app has no advertising or standalone usage
 analytics or crash-reporting integration.
+
+Google ML Kit, used for on-device text recognition and scanning, can send
+technical information to Google: device/app information, installation or device
+identifiers, API-use events, performance measurements and error codes. Google
+uses this for SDK diagnostics and usage analytics. The SDK's documented
+technical reporting uses HTTPS; receipt images used for on-device recognition
+are separate from the document uploads described below. See
+[Google's ML Kit data-disclosure documentation](https://developers.google.com/ml-kit/android-data-disclosure).
 
 ## 3. Receipt processing and AI
 
