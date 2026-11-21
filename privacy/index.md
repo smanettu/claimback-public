@@ -70,11 +70,12 @@ In versions that offer error reporting, a technical error displays a random supp
 You can share just that code with support. It identifies an operation and its retries.
 The developer can use it to look up technical records on the processing server.
 
-Automatic error reporting is enabled in supported builds. The phone sends the code,
-app build, operating system and major version, named steps, timing, retry information,
-HTTP status and a predefined failure category to ClaimBack on Fly.io when an error
-appears. Email content, account identifiers, receipt details, filenames, credentials,
-screenshots and raw error messages are excluded. Sharing a screenshot is your choice.
+When automatic error reporting is enabled and a technical error appears, the phone
+sends four fields to ClaimBack on Fly.io: the support code, a predefined failure
+reason, the app build number and how long the operation ran before the error.
+The error reporter never captures or uploads a screenshot. If you contact support,
+the code alone is enough. The report excludes receipt and email contents,
+filenames, account identifiers, device identifiers and raw error messages.
 Google Firebase App Check uses Apple App Attest or Google Play Integrity to verify
 that the report comes from ClaimBack. These services process app and device
 verification information. Cloud reports go to ClaimBack even when you use a local
