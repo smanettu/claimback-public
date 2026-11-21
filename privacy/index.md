@@ -1,7 +1,7 @@
 # ClaimBack — Privacy Notice
 
-**Version:** 1.1  
-**Effective date:** November 18, 2026
+**Version:** 1.2  
+**Effective date:** November 21, 2026
 
 ClaimBack helps you organise receipts, track product warranties and prepare
 warranty claims. Your saved items and claims are stored on your device.
@@ -63,6 +63,29 @@ AI results can be incomplete or incorrect. Review extracted details and claim
 drafts before relying on or sharing them. Sharing a claim through your device's
 share menu sends the content to the app or recipient you select; ClaimBack does
 not automatically submit warranty claims or send emails on your behalf.
+
+### Error reports and support codes
+
+In versions that offer error reporting, a technical error displays a random support code.
+You can share just that code with support. It identifies an operation and its retries.
+The developer can use it to look up technical records on the processing server.
+
+Automatic error reporting is enabled in supported builds. The phone sends the code,
+app build, operating system and major version, named steps, timing, retry information,
+HTTP status and a predefined failure category to ClaimBack on Fly.io when an error
+appears. Email content, account identifiers, receipt details, filenames, credentials,
+screenshots and raw error messages are excluded. Sharing a screenshot is your choice.
+Google Firebase App Check uses Apple App Attest or Google Play Integrity to verify
+that the report comes from ClaimBack. These services process app and device
+verification information. Cloud reports go to ClaimBack even when you use a local
+receipt-processing server.
+
+You can switch off **Send error reports** in Settings. This clears waiting reports
+and stops future uploads from the phone. Up to 20 reports can wait on the phone
+for 48 hours. Diagnostic timelines expire from the live server database after seven
+days. Hosting backups can retain earlier copies. The receipt service still records
+operational information when processing a request. A code alone gives no access
+to the private lookup. Include your code if you contact the developer about a report.
 
 ## 4. Optional Gmail import
 
