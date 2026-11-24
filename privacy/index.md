@@ -1,7 +1,8 @@
 # ClaimBack — Privacy Notice
 
-**Version:** 1.2  
-**Effective date:** November 21, 2026
+**Version:** 1.3
+
+**Effective date:** November 24, 2026
 
 ClaimBack helps you organise receipts, track product warranties and prepare
 warranty claims. Your saved items and claims are stored on your device.
@@ -87,6 +88,21 @@ for 48 hours. Diagnostic timelines expire from the live server database after se
 days. Hosting backups can retain earlier copies. The receipt service still records
 operational information when processing a request. A code alone gives no access
 to the private lookup. Include your code if you contact the developer about a report.
+
+### Weekly receipt uploads during closed testing
+
+In closed-test builds that support the weekly count, the first eligible cloud
+receipt upload creates a random identifier on the phone. The app sends it to
+ClaimBack with receipt submissions so the developer can count how many
+installations successfully upload at least one receipt each week. Earlier builds
+do not send this identifier. This count is separate from error reporting.
+
+The server uses a different secret key each week to turn the identifier into a
+weekly fingerprint. It keeps the live count separate from receipt records and
+diagnostic timelines. The raw identifier is never saved in those records or in
+the weekly count. After each UTC week closes, the service removes the fingerprints
+and that week's key from the live database. It keeps totals for 13 completed weeks.
+Hosting backups can retain earlier copies.
 
 ## 4. Optional Gmail import
 
